@@ -4,4 +4,3 @@ Amritesh Kuraria, 50598180 , akuraria@buffalo.edu
 Kshitij Kumar, 50610480 , kkumar8@buffalo.edu
 
 
-Please put your team's information (e.g. team members name, ub number, email) in this file. (Delete this message after you have done so)
