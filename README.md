@@ -7,5 +7,5 @@ Extracting hot trending research topics from the NeurIPS and ArXiv publication d
 | Amritesh Kuraria      | akuraria@buffalo.edu      |   50598180 |
 | Shubham Shubham | shubham@buffalo.edu      | 50596116    |
 
-
+Link to the dataset: https://drive.google.com/file/d/1BXNsl8h2SQzQJdsYJM7g7GEhTm0P50cJ/view?usp=sharing
 
