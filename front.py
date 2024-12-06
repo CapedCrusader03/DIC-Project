@@ -18,11 +18,14 @@ def load_page(page_name):
         # Import and run the modify_page.py
         import modify_page
         modify_page.show()
+    elif page_name=="lookUp":
+        import lookUp_page
+        lookUp_page.show()
 
 # Dropdown for operations
 operation = st.selectbox(
     "Choose an operation to perform on the database:",
-    ["", "Add", "Delete", "Modify"]
+    ["","lookUp", "Add", "Delete", "Modify"]
 )
 
 # Load the corresponding page based on selection
