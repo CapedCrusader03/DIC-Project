@@ -10,7 +10,7 @@ Extracting hot trending research topics from the NeurIPS and ArXiv publication d
 Link to the dataset: https://drive.google.com/file/d/1BXNsl8h2SQzQJdsYJM7g7GEhTm0P50cJ/view?usp=sharing
 
 
-# Research Analysis Web App
+# Study on research papers published in ArXiv and NeurIPS
 
 This repository contains the source code for a Streamlit-based web application that allows users to perform CRUD operations (Create, Read, Update, Delete) on a research database and analyze data based on predefined hypotheses.
 
