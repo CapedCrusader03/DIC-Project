@@ -1,6 +1,4 @@
 import streamlit as st
-# import Kshitij_Hypo_1 as kk
-# import shakyahypo1 as shakya_badmaash
 import sqlite3
 import pandas as pd
 import re  # Import the re module
@@ -22,6 +20,9 @@ from collections import Counter
 from nltk.stem import PorterStemmer
 import itertools
 import numpy as np
+import gdown
+import os
+
 
 st.set_page_config(
     page_title="Study on Research papers published in NeurIPS and ArXiv",
@@ -29,8 +30,6 @@ st.set_page_config(
     layout="centered",
     initial_sidebar_state="auto"
 )
-
-import os
 
 # Function to establish connection to the SQLite database
 @st.cache_resource
@@ -69,6 +68,17 @@ st.title("A study on research papers published in NeurIPS and ArXiv.")
 DB_FILE = "neurips_arxiv.db"  # SQLite database file
 CSV_FILE = "neurips_arxiv.csv"       # CSV file to load
 TABLE_NAME = "neurips_arxiv"   # Table name for the CSV data
+# Check if the file already exists
+if not os.path.exists(CSV_FILE):
+    st.markdown("### The file doesn't exist locally, downloading from Google Drive link. ")
+    st.markdown("##### It's a 2.5GB file, so it might take some time... ")
+    print("File does not exist locally. Downloading from Google Drive...")
+    file_id = "1BXNsl8h2SQzQJdsYJM7g7GEhTm0P50cJ"
+    download_url = f"https://drive.google.com/uc?id={file_id}"
+
+    # Download the file
+    output_file = "neurips_arxiv.csv"
+    gdown.download(download_url, output_file, quiet=False)
 
 # Establish database connection
 conn = get_database_connection(DB_FILE)
